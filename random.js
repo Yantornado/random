@@ -5,6 +5,7 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+     var number = Math.random()
     makeRect(0,0,200,100,"DarkSlateGray",1);
 makeEllipse(103,255,55,5,"lightgreen",1);
 makeRect(75,110,50,80,"lightgreen",1);
@@ -27,13 +28,17 @@ makeCircle(85,50,10,"white",1);
 makeCircle(115,50,10,"white",1);
 makeCircle(85,50,5,"black",1);
 makeCircle(115,50,5,"black",1);
+if(number < 0.2){
+    makeCircle(85,50,10,"red",1);
+        makeCircle(115,50,10,"red",1);
 }
-
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+     var number = Math.random()
 makeRect(0,0,200,100,"lightgreen",1);
     makeCircle(105,50,30,"black",1);    
     makeCircle(105,50,27,"green",1);
@@ -41,6 +46,10 @@ makeRect(0,0,200,100,"lightgreen",1);
     makeCircle(105,50,22,"black",1);
     makePolygon("96,30 114,30 105,50","#bfff00", 1);
      makePolygon("96,70 114,70 105,50","#bfff00", 1); 
+    if(number < 0.34){
+    makePolygon("96,30 114,30 105,50","purple", 1);
+     makePolygon("96,70 114,70 105,50","blue", 1); 
+}
 }
 
 
@@ -48,23 +57,40 @@ makeRect(0,0,200,100,"lightgreen",1);
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
+    var number = Math.random()
  makeRect(0,0,200,100,"tan",1);
     makeRect(50,10,100,100,"yellow",1);
     makeRect(50,90,100, 25,"chocolate",1);
+    makeRect(50,93,6, 3,"black",1);
+    makeRect(60,93,10, 3,"black",1);
+    makeRect(75,93,10, 3,"black",1);
+    makeRect(90,93,10, 3,"black",1);
+    makeRect(105,93,10, 3,"black",1);
+    makeRect(120,93,10, 3,"black",1);
+    makeRect(135,93,10, 3,"black",1);
     makeEllipse(85,35,15,15,"black",1);
     makeEllipse(113,35,15,15,"black",1);
     makeEllipse(85,35,14.4,14.4,"white",1);
     makeEllipse(113,35,14.4,14.4,"white",1);
     makeEllipse(85,35,8,8,"blue",1);
     makeEllipse(113,35,8,8,"blue",1);
+    makeEllipse(85,35,3,3,"black",1);
+    makeEllipse(113,35,3,3,"black",1);
     makeRect(73,60,50,2,"black",1);
+    makeRect(83,78,30,2,"hotpink",1);
     makeEllipse(85,50,15,4,"black",1);
     makeEllipse(85,50,15,3,"yellow",1);
     makeRect(83,62,30,13,"white",1);
+    makeRect(97,62,1,13,"black",1);
+    makePolygon("80,90 98,100 118,90","white");
+    makePolygon("94,95 98,90 102,95","red");
+    makePolygon("94,95 98,100 102,95","red");
+    if(number < 0.68){
+    makeEllipse(85,35,8,8,"red",1);
+        makeEllipse(113,35,8,8,"red",1);
+
 }
-
-
-
+}
 
 
 // FILL IN THIS FUNCTION!
